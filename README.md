@@ -1,4 +1,4 @@
-# ICS20-Unit-5-01-JS
+# ICS20-Unit-5-02-JS
 
 [![Ava Venturino's Super Linter](https://github.com/AvaVenturino/ICS20-Unit-5-02-JS/workflows/Ava%20Venturino's%20Super%20Linter/badge.svg)](https://github.com/AvaVenturino/ICS20-Unit-5-02-JS/actions)
 
