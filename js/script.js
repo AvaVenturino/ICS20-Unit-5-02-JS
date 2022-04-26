@@ -13,9 +13,6 @@ if (navigator.serviceWorker) {
   })
 }
 
-  // this allows for console input in Node.js
-  const prompt = require('prompt-sync')()
-
   // input
   function myButtonClicked() {
   const numbervalue = prompt("Input negative or positive number") 
@@ -25,8 +22,7 @@ if (navigator.serviceWorker) {
     document.getElementById("answer").innerHTML =
     "The number is negative!"
   } else {
-    console.log(The number is positive!);
-  }
-    console.log("/nDone.")
+    document.getElementById("answer").innerHTML =
+    "The number is positive!"
   }
 }
