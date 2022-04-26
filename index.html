@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<!--ICS20-Unit-5-01-JS-->
+<!--ICS20-Unit-5-02-JS-->
 <html lang="en-ca">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content=" Converting Fahrenheit to Celsius, with JavaScript">
+    <meta name="description" content="Integer identificator, with JavaScript">
     <meta name="keywords" content="mths, ics2o">
     <meta name="author" content="Ava Venturino">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#FFFFFF" />
     <title>Try to guess the number!</title>
-    <link rel="canonical" href="https://AvaVenturino.github.io/ICS20-Unit-5-01-JS/" />
-    <link rel="manifest" href="/ICS20-Unit-5-01-JS/manifest.webmanifest" />
+    <link rel="canonical" href="https://AvaVenturino.github.io/ICS20-Unit-5-02-JS/" />
+    <link rel="manifest" href="/ICS20-Unit-5-02-JS/manifest.webmanifest" />
     <link rel="stylesheet" href="./css/style.css" /> 
     <!-- None blocking for Lighthouse report -->
     <!-- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously -->
@@ -20,28 +20,25 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   </head>
-  <title>My first Slider</title>
+  <title>Integer identificator</title>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./js/script.js"></script>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Guess the number!</span>
+          <span class="mdl-layout-title">Integer identificator</span>
         </div>
       </header>
       <main class="mdl-layout__content">
-        <p></p>
-        <div id="slider-value">
-          ?
-        </div>  
-        <!-- Slider with Starting Value -->
-        <label>
-          Slider's Value
-          <input id = "slider" class="mdl-slider mdl-js-slider" type="range"
-          min="1" max="6" value="2" tabindex="0"
-          onchange = "updateSliderValue(this.value)">
-        </label>
+        <!-- Numeric Textfield -->
+       <form action="#">
+       <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+        <label class="mdl-textfield__label" for="sample2">Input a negative or positive number</label>
+       <span class="mdl-textfield__error">Input is not a number!</span>
+       </div>
+   </form>
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"

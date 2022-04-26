@@ -8,36 +8,28 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS20-Unit-5-01-JS/sw.js", {
-    scope: "/ICS20-Unit-5-01-JS/",
+  navigator.serviceWorker.register("/ICS20-Unit-5-02-JS/sw.js", {
+    scope: "/ICS20-Unit-5-02-JS/",
   })
 }
 
-const randomNumber = Math.floor(Math.random() * 6) + 1
-
-/**
+   /**
  * This function updates the slider value.
  */
-function updateSliderValue(valueFromSlider) {
-  document.getElementById("slider-value").innerHTML = valueFromSlider
-}
+  // this allows for console input in Node.js
+  const prompt = require('prompt-sync')()
 
-/**
- * This function compares slider with random number.
- */
-function myButtonClicked() {
-  const sliderValue = slider.value
+  // input
+  function myButtonClicked() {
+  const positive = prompt("Enter the number of students: ")
+  const negative = prompt("Enter the number of students: ")
 
   // process
-  if (sliderValue == randomNumber) {
+  if (numbervalue < 0) {
     document.getElementById("answer").innerHTML =
-      "Answer is " + randomNumber + "!" + " Congratulations!"
-    // console.log("Congratulations!")
-  }
-  //  block of code to be executed if condition1 is true
-  if (sliderValue != randomNumber) {
+      "The number is " + Negative + "!"
+  } else (sliderValue > 0) {
     document.getElementById("answer").innerHTML =
-      "Answer is " + randomNumber + "!" + " Try again!"
-    // console.log("Try again!")
+      "The number is " + Positive + "!"
   }
 }
