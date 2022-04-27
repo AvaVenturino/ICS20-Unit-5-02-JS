@@ -13,9 +13,9 @@ if (navigator.serviceWorker) {
   })
 }
 
-  // input
-  function myButtonClicked() {
-    const numbervalue = parseInt(document.getElementById("numbervalue").value)
+// input
+function myButtonClicked() {
+  const numbervalue = parseInt(document.getElementById("numbervalue").value)
 
   // process
   if (numbervalue < 0) {
