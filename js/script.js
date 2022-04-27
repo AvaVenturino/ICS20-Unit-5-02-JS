@@ -7,22 +7,20 @@
 /**
  * Check servie worker.
  */
- if (navigator.serviceWorker) {
+if (navigator.serviceWorker) {
   navigator.serviceWorker.register("/ICS20-Unit-5-02-JS/sw.js", {
     scope: "/ICS20-Unit-5-02-JS/",
-  })
+  });
 }
 
-  // input
-  function myButtonClicked() {
+// input
+function myButtonClicked() {
   const numbervalue = parseInt(document.getElementById("numbervalue").value);
-  
+
   // process
   if (numbervalue < 0) {
-    document.getElementById("answer").innerHTML =
-    "The number is negative!"
+    document.getElementById("answer").innerHTML = "The number is negative!";
   } else {
-    document.getElementById("answer").innerHTML =
-    "The number is positive!"
+    document.getElementById("answer").innerHTML = "The number is positive!";
   }
 }
