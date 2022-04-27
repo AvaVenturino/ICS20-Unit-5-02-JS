@@ -15,7 +15,7 @@ if (navigator.serviceWorker) {
 
   // input
   function myButtonClicked() {
-  const numbervalue = prompt("Input negative or positive number") 
+  const numbervalue = parseInt(document.getElementById("numbervalue").value);
   
   // process
   if (numbervalue < 0) {
