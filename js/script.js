@@ -14,8 +14,8 @@ if (navigator.serviceWorker) {
 }
 
 // Input
-  // Input
-  function myButtonClicked() {
+// Input
+function myButtonClicked() {
   const numbervalue = parseInt(document.getElementById("numbervalue").value)
 
   // process
