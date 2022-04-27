@@ -13,7 +13,6 @@ if (navigator.serviceWorker) {
   })
 }
 
-  // input
   // Input
   function myButtonClicked() {
     const numbervalue = parseInt(document.getElementById("numbervalue").value)
