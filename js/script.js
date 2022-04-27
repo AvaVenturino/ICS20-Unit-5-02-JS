@@ -13,16 +13,14 @@ if (navigator.serviceWorker) {
   })
 }
 
-  // input
-  function myButtonClicked() {
-  const numbervalue = parseInt(document.getElementById("numbervalue").value);
-  
+// input
+function myButtonClicked() {
+  const numbervalue = parseInt(document.getElementById("numbervalue").value)
+
   // process
   if (numbervalue < 0) {
-    document.getElementById("answer").innerHTML =
-    "The number is negative!"
+    document.getElementById("answer").innerHTML = "The number is negative!"
   } else {
-    document.getElementById("answer").innerHTML =
-    "The number is positive!"
-  };
+    document.getElementById("answer").innerHTML = "The number is positive!"
+  }
 }
